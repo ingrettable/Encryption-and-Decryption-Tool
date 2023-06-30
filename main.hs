@@ -77,7 +77,7 @@ numToIpAddress num = show e1 ++ "." ++ show e2 ++ "." ++ show e3 ++ "." ++ show 
 main :: IO ()
 main = do
     key <- generateKey
-    let plaintext = "HELLO WORLD. GRETTA HALOLLARI, PROGRAMMING ABSTRACTIONS"
+    let plaintext = "HELLO WORLD."
         ciphertext = encrypt key plaintext
         decryptedText = decrypt key ciphertext
     putStrLn $ "Plaintext: " ++ plaintext
